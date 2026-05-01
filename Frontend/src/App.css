@@ -1,0 +1,438 @@
+.auth-screen {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    linear-gradient(135deg, rgba(14, 165, 233, 0.12), transparent 34%),
+    linear-gradient(315deg, rgba(245, 158, 11, 0.12), transparent 38%),
+    #f7f8fb;
+}
+
+.auth-panel {
+  width: min(460px, 100%);
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 32px;
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.09);
+}
+
+.auth-panel h1 {
+  font-size: 32px;
+  line-height: 1.1;
+  margin: 6px 0 10px;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  background: #f5f7fb;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding: 24px 18px;
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.brand,
+.user-menu,
+.task-card-head,
+.page-heading,
+.team-row {
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.brand-mark,
+.avatar {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  background: #0ea5e9;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.brand span,
+.user-menu span,
+.compact-list span,
+.team-row span {
+  display: block;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.nav-list {
+  display: grid;
+  gap: 8px;
+}
+
+.nav-list a {
+  color: #cbd5e1;
+  text-decoration: none;
+  padding: 11px 12px;
+  border-radius: 8px;
+}
+
+.nav-list a.active,
+.nav-list a:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.workspace {
+  min-width: 0;
+  padding: 24px;
+}
+
+.topbar,
+.page-heading {
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.topbar {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 18px 20px;
+}
+
+.topbar h1,
+.page-heading h2,
+.panel h3,
+.task-card h3,
+.project-card h3 {
+  margin: 0;
+  color: #111827;
+}
+
+.topbar h1 {
+  font-size: 24px;
+}
+
+.user-menu {
+  gap: 12px;
+}
+
+.page-stack {
+  display: grid;
+  gap: 20px;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #0f766e;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.muted {
+  color: #64748b;
+}
+
+.panel,
+.stat-card,
+.task-card,
+.project-card,
+.team-row {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(120px, 1fr));
+  gap: 14px;
+}
+
+.stat-card span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.stat-card strong {
+  display: block;
+  margin-top: 10px;
+  color: #111827;
+  font-size: 30px;
+}
+
+.two-column,
+.card-grid,
+.task-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.panel-title {
+  margin-bottom: 14px;
+}
+
+.breakdown {
+  display: grid;
+  gap: 10px;
+}
+
+.breakdown div,
+.compact-list article,
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.compact-list {
+  display: grid;
+  gap: 12px;
+}
+
+.compact-list article {
+  padding: 10px 0;
+  border-top: 1px solid #eef2f7;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.form-span {
+  grid-column: 1 / -1;
+}
+
+label {
+  display: grid;
+  gap: 7px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 11px 12px;
+  background: #ffffff;
+  color: #111827;
+  font: inherit;
+}
+
+select[multiple] {
+  min-height: 98px;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 11px 14px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.primary-button {
+  background: #0f766e;
+  color: #ffffff;
+}
+
+.ghost-button {
+  background: #eef2f7;
+  color: #0f172a;
+}
+
+.danger-button {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.alert {
+  border-radius: 8px;
+  padding: 11px 12px;
+  font-size: 14px;
+}
+
+.alert.error {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.alert.success {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.task-card,
+.project-card {
+  display: grid;
+  gap: 14px;
+  border-top: 4px solid #64748b;
+}
+
+.priority-high {
+  border-top-color: #ef4444;
+}
+
+.priority-medium {
+  border-top-color: #f59e0b;
+}
+
+.priority-low {
+  border-top-color: #22c55e;
+}
+
+.task-card-head {
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.task-card-head span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  width: max-content;
+  border-radius: 999px;
+  padding: 5px 10px;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.badge.danger {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.meta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.meta-grid span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.meta-grid strong {
+  display: block;
+  color: #111827;
+}
+
+.member-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.member-row span {
+  border-radius: 999px;
+  background: #f1f5f9;
+  padding: 6px 9px;
+  color: #334155;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.team-list {
+  display: grid;
+  gap: 12px;
+}
+
+.team-row {
+  grid-template-columns: auto minmax(0, 1fr) 220px auto;
+  gap: 14px;
+}
+
+.role-control {
+  gap: 5px;
+  min-width: 0;
+}
+
+.screen-loader {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  color: #475569;
+}
+
+@media (max-width: 1100px) {
+  .stats-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 820px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+    height: auto;
+  }
+
+  .nav-list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .topbar,
+  .page-heading,
+  .user-menu {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .stats-grid,
+  .two-column,
+  .card-grid,
+  .task-grid,
+  .form-grid,
+  .meta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-row {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+}
